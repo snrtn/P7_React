@@ -1,0 +1,228 @@
+.infos {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.infoDesc {
+  margin-top: 30px;
+}
+.infoAccordion {
+  margin-top: 24px;
+  display: flex;
+  width: 100% !important;
+  gap: 20px;
+}
+.infoAccordionItem{
+  flex: 1;
+}
+.productInfo {
+  box-sizing: border-box;
+  
+}
+
+.slideContainer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slideImgContainer {
+  display: flex;
+  transition: transform .5s ease;
+  position: relative;
+}
+.slideImgs {
+  flex-shrink: 0;
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  border-radius: 25px;
+  
+}
+.slideArrowContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.slideArrow {
+  width: 65px;
+  height: 65px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+}
+.slideArrow img {
+  width: 100%;
+  height: 100%;
+}
+.slideCounter {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-85%, 50%);
+  color: #FFFFFF;
+  
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.productTitle {
+  font-weight: 500;
+  font-size: 36px;
+  color: #FF6060;
+}
+.productLocation {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF6060;
+}
+.productTagsContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+}
+.productTags {
+  height: 25px;
+  padding: 0 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF6060;
+  margin-right: 10px;
+}
+.productTag {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.productPerson {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.productPersonContainer {
+  display: flex;
+  align-items: center;
+}
+.productPersonName{
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF6060;
+}
+.productPersonImg {
+  width: 64px;
+  height: 64px;
+  background: #C4C4C4;
+  border-radius: 50%;
+}
+
+
+.productPersonImg img {
+    width: 64px;
+    height: 64px;
+    left: 1273px;
+    top: 567px;
+    border-radius: 50px;
+    background: #C4C4C4;
+}
+
+.productPersonName p {
+    width: 93px;
+    left: 1170px;
+    top: 573px;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* or 26px */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+
+    color: #FF6060;
+    margin-right: 10px;
+}
+.stars img {
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 900px) {
+  .infos{
+    margin-top: -30px;
+  }
+  .slideImgs{
+    height: 255px;
+  }
+
+  .infoAccordion{
+    flex-direction: column;
+  }
+  .productContainer {
+    flex-direction: column;
+    
+  }
+  .productTitle {
+    font-size: 18px;
+  }
+  .productLocation {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .productTagsContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .productTags {
+    height: 23.5px; 
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    line-height: 8px;
+    margin-right: 0px;    
+  }
+  .stars {
+    width: 100%;
+  }
+  .stars img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .productPerson {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .productPersonName p {
+    left: 0%;
+    right: 31.37%;
+    top: 0%;
+    bottom: 0%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 50px;
+  }
+  .stars img {
+    width: 15px;
+    height: 15px;
+}
+}
