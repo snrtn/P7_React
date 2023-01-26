@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 const Home = React.lazy(() => import("./views/homeView"));
 const About = React.lazy(() => import("./views/aboutView"));
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
           <Route path="*" element={<NotFound />} />
@@ -21,6 +21,6 @@ root.render(
           <Route path="products/:id" element={<ProductDetails />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
