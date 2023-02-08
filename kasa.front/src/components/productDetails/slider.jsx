@@ -1,32 +1,39 @@
 import { useState } from "react";
-import "./productDetails.css"
+import "./productDetails.css";
 
 const Slider = (props) => {
-  const [ count, setCount ] = useState(0)
-
+  const [count, setCount] = useState(0);
 
   const onNext = () => {
-    if(count === props.picture.length - 1){
-      setCount(0)
+    if (count === props.picture.length - 1) {
+      setCount(0);
     } else {
-      setCount(count + 1)
+      setCount(count + 1);
     }
-}
+  };
 
   const onPrev = () => {
-    if(count === 0){
-      setCount(props.picture.length - 1)
+    if (count === 0) {
+      setCount(props.picture.length - 1);
     } else {
-      setCount(count - 1)
+      setCount(count - 1);
     }
-}
+  };
 
   return (
-    <div className='slideContainer'>
-      <div className='slideImgContainer' style={{transform: `translateX(-${count}00%)`}}>
-        {props.picture.map((picture) => 
-          <img className="slideImgs" src={picture} alt={picture} key={picture.index}/>
-        )}
+    <div className="slideContainer">
+      <div
+        className="slideImgContainer"
+        style={{ transform: `translateX(-${count}00%)` }}
+      >
+        {props.picture.map((picture) => (
+          <img
+            className="slideImgs"
+            src={picture}
+            alt={picture}
+            key={picture}
+          />
+        ))}
       </div>
 
       <div className="slideArrowContainer">
@@ -38,9 +45,11 @@ const Slider = (props) => {
         </button>
       </div>
 
-      <div className='slideCounter'>{count + 1} / {props.picture.length}</div>
+      <div className="slideCounter">
+        {count + 1} / {props.picture.length}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Slider;

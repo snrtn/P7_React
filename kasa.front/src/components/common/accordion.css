@@ -1,14 +1,14 @@
-.aboutWrapper{
+.aboutWrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 33px;
   cursor: pointer;
 }
-.startBox{
+.startBox {
   width: 100%;
   height: 47px;
-  background: #FF6060;
+  background: #ff6060;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,14 +17,14 @@
   border-radius: 5px;
   z-index: 99;
 }
-.startTitle{
+.startTitle {
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
 }
 .dropBox {
   width: 100%;
-  background: #F6F6F6;
+  background: #f6f6f6;
   overflow: hidden;
   margin-top: -10px;
   transition: max-height 0.6s ease;
@@ -32,30 +32,38 @@
   display: flex;
   flex-direction: column;
 }
-.dropBody{
-  width: 100%; 
+.dropBody {
+  width: 100%;
   padding: 30px;
   box-sizing: border-box;
   font-size: 24px;
   font-weight: 400;
-  color: #FF6060;
-  
+  color: #ff6060;
+}
+.dropBody2 {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ff6060;
 }
 
 @media (max-width: 900px) {
-  .aboutWrapper{
+  .aboutWrapper {
     margin-bottom: 20px;
   }
-  .startBox{
+  .startBox {
     width: 100%;
   }
-  .startTitle{
+  .startTitle {
     font-size: 13px;
   }
-  .dropBox{
+  .dropBox {
     width: 100%;
   }
-  .dropBody{
+  .dropBody {
     font-size: 12px;
   }
 }
